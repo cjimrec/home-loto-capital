@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Catalogo de libros</title>
+<link href="/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<img src="/img/2379396.svg">
+
+	<table>
+		<thead>
+		<tr>
+			<th>Titulo</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="libros: ${libros}">
+			<td th:text="${libros.titulo}"></td>
+			<td> <a th:href="'/libro/info/' + ${libros.titulo}">Info</a></td>
+		</tr>
+	</tbody>
+	</table>
+<a th:href="@{/inicio}">Volver al Home</a>
+</body>
+</html>

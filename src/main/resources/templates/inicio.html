@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pagina de Carlos</title>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+	<img alt="logo" src="/img/svg-2.svg" >
+	<h1>Juegos varios</h1>
+	<p id="textoInicial">Tendremos tres juegos diferentes para poder demostrar los aprendido este tiempo con Javi</p>
+	<p id="proverbioChino" th:text="${proverbio}"></p>
+	<a th:href="@{/loto/menu}">Jugar loteria</a>
+	<a th:href="@{/libro/menu}">Ver listado de libros</a>
+	<a th:href="@{/imagenes/preguntas}">Jugar a capitales</a>
+</body>
+</html>

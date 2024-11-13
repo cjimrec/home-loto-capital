@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Probando suerte</title>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+<img alt="logo" src="/img/Logo_Lotería_Nacional.svg.png" >
+    <h1>Combinación generada para <span th:text="${pais}"></span></h1>
+    <p>La combinación es: <span th:text="${combinacion}"></span></p>
+    
+    <a th:href="@{/loto/menu}">Volver al menú de Lotería</a>
+</body>
+</html>

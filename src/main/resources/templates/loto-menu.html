@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loterias</title>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+	<img alt="logo" src="/img/Logo_Lotería_Nacional.svg.png" >
+	<h1>Menú Generador de Loterías</h1>
+    <ul>
+        <li><a th:href="@{/loto/genera/49/6/spain}">Generar Lotería Española (6 de 49)</a></li>
+        <li><a th:href="@{/loto/genera/49/6/germany}">Generar Lotería Alemana (6 de 49)</a></li>
+        <li><a th:href="@{/loto/genera/90/6/france}">Generar Lotería Francesa (6 de 90)</a></li>
+        <li><a th:href="@{/loto/genera/59/5/italy}">Generar Lotería Italiana (5 de 59)</a></li>
+    </ul>
+    <a th:href="@{/inicio}">Volver al Home</a>
+</body>
+</html>

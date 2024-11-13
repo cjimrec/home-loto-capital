@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+img{
+	width:150px;height:150px;
+}
+
+#textoInicial{
+	font-family: sans-serif;
+}
+
+#proverbioChino{
+	font-style: italic;
+	 font-size: 20px;
+}

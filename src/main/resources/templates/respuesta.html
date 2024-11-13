@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Respuesta</title>
+</head>
+<body>
+    <h1 th:text="${mensaje}"></h1>
+    <img th:src="${imagen}" width="500px" alt="Imagen de la capital"/>
+
+    <div th:if="${acertado}">
+        <a th:href="@{/imagenes/preguntas}">
+            <button>Intentar con otra capital</button>
+        </a>
+    </div>
+
+    <div th:if="${!acertado}">
+        <a th:href="@{/imagenes/preguntas}">
+            <button>Intentar de nuevo</button>
+        </a>
+    </div>
+</body>
+</html>

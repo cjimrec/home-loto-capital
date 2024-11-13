@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Informacion libro</title>
+<link href="/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<img src="/img/2379396.svg">
+	<ul>
+		<li>Titulo: <span th:text=${libro.titulo}></span></li>
+		<li>Autor: <span th:text=${libro.autor}></span></li>
+		<li>Cantidad de ejemplares: <span th:text=${libro.cantidadEjemplares}></span></li>
+		<li>Genero: <span th:text=${libro.getGenero()}></span></li>
+	</ul>
+	<a th:href="@{/libro/menu}">Volver atrás</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivina la Capital</title>
+</head>
+<body>
+    <div> 
+    <h3>¿Cuál es esta ciudad?</h3>
+        <img th:src="${capitalaleatoria.url}" width="500px" alt="Imagen de ${capitalaleatoria.nombre}"/>
+        
+        
+        <ul>
+<li th:each="opcion : ${opciones}">
+    <a th:href="@{/respuesta(respuesta=${opcion.nombre}, correcta=${capitalaleatoria.nombre})}" 
+       th:text="${opcion.nombre}">
+    </a>
+</li>
+        </ul>
+    </div>
+</body>
+</html>
